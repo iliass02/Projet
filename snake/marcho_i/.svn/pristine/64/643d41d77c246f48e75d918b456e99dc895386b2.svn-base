@@ -1,0 +1,22 @@
+/*
+** const.h for  in /home/debian/Snake/marcho_i
+** 
+** Made by MARCHOUD Iliass
+** Login   <marcho_i@etna-alternance.net>
+** 
+** Started on  Sat Apr 11 14:43:41 2015 MARCHOUD Iliass
+** Last update Sat Apr 11 16:13:35 2015 MARCHOUD Iliass
+*/
+
+#include "SDL/SDL.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+#ifndef _CONST_
+# define _CONST_
+
+void move_snake (SDL_Rect snakePosition, SDL_Rect bonusPosition, SDL_Surface *fenetre, SDL_Surface *snake, SDL_Surface *bonus);
+
+int dead(SDL_Rect snakePostion);
+
+#endif

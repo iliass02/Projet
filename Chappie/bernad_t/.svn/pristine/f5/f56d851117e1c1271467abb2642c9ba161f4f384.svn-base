@@ -1,0 +1,54 @@
+/*
+** main.c for  in /Users/marcho_i/Desktop/RAT-DEVC/bernad_t
+** 
+** Made by MARCHOUD iliass
+** Login   <marcho_i@etna-alternance.net>
+** 
+** Started on  Mon May 25 09:22:17 2015 MARCHOUD iliass
+** Last update Mon May 25 13:45:58 2015 BERNADET Thibault
+*/
+#include "header.h"
+
+int		rand_number (char *ingredient[16])
+{
+	int		number[15];
+	int 	i;
+
+	for (i = 0; i <= 15; ++i)
+	{
+		number[i] = rand() % 11;
+		my_putstr(ingredient[i]);
+		my_put_nbr(number[i]);
+		my_putstr("\n");
+	}
+	return 0;
+}
+
+void tab_ingredient()
+{
+	char 	*ingredient[16];
+
+	ingredient[0] = "pates";
+	ingredient[1] = "fromage";
+	ingredient[2] = "creme_fraiche";
+	ingredient[3] = "tomates";
+	ingredient[4] = "huile";
+	ingredient[5] = "tomates";
+	ingredient[6] = "olive";
+	ingredient[7] = "oeuf";
+	ingredient[8] = "farine";
+	ingredient[9] = "sucre";
+	ingredient[10] = "chocolat";
+	ingredient[11] = "beurre";
+	ingredient[12] = "fraise";
+	ingredient[13] = "chantilly";
+	ingredient[14] = "pates_feuilletee";
+	ingredient[15] = "fromage";
+	rand_number(ingredient);
+}
+
+int		main()
+{
+  aff();
+  return 0;
+}

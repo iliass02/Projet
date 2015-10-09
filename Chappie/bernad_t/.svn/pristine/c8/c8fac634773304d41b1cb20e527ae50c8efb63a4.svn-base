@@ -1,0 +1,23 @@
+/*
+** my_putstr.c for  in /Users/marcho_i/Desktop/RAT-DEVC/bernad_t
+** 
+** Made by MARCHOUD iliass
+** Login   <marcho_i@etna-alternance.net>
+** 
+** Started on  Mon May 25 09:34:11 2015 MARCHOUD iliass
+** Last update Mon May 25 09:34:40 2015 MARCHOUD iliass
+*/
+
+void	my_putchar(char c);
+
+void	my_putstr(char *str)
+{
+  	int	i;
+
+  	i = 0;
+  	while (str[i] != '\0')
+    {
+      	my_putchar(str[i]);
+      	++i;
+    }
+}

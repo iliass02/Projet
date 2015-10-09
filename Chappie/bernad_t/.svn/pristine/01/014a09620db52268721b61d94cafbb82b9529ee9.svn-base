@@ -1,0 +1,68 @@
+/*
+** fonctionp.c for fomctionp.c in /Users/bernad_t/Documents/ratrapc/bernad_t
+** 
+** Made by BERNADET Thibault
+** Login   <bernad_t@etna-alternance.net>
+** 
+** Started on  Mon May 25 10:07:39 2015 BERNADET Thibault
+** Last update Mon May 25 11:05:05 2015 BERNADET Thibault
+*/
+
+#include "header.h"
+
+void	my_putchar(char c)
+{
+  write(1, &c, 1);
+}
+
+void	my_putstr(char *str)
+{
+  int i;
+
+  for (i = 0; str[i] != '\0'; i++)
+    {
+      my_putchar(str[i]);
+    }
+}
+
+void	my_put_nbr(int n)
+{
+  int x;
+  
+  x =  1;
+  if (n == -2147483647)
+    write(1, "-2147483647", 11);
+  else
+    {
+      if (n == 2147483647)
+	write(1, "2147483647", 10);
+      if (n < 0)
+	{
+	  my_putchar('-');
+	  n = - n;
+	}
+      while (n / x >= 10)
+	x = x * 10;
+      while (x > 0)
+	{
+	  my_putchar((n / x) % 10 + 48);
+	  x = x / 10;
+	}
+    }
+}
+
+char	*readLine()
+{
+  ssize_t	ret;
+  char		*buff;
+
+  if ((buff = malloc(sizeof(*buff) * (50 + 1))) == NULL)
+    return (NULL);
+  if ((ret = read(0, buff, 50)) > 1)
+    {
+      buff[ret - 1] = '\0';
+      return (buff);
+    }
+  buff[0] = '\0';
+  return (buff);
+}

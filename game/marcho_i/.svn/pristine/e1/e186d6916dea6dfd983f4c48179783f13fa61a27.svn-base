@@ -1,0 +1,20 @@
+<?php
+
+function parseur($argv)
+{
+	$map = $argv;
+	$file = @file_get_contents($map);
+	if (@file_get_contents($map) == true)
+	{
+		$array = explode('\n', $file);
+		foreach ($array as &$value) 
+		{
+			$value = explode(' ', $value);
+		}
+		print_r($value);
+	}
+	else
+		echo "ERREUR : Impossible d'ouvrir la map : ".$map."\n";
+}
+
+?>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space Game</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<center><h1>Space Game</h1></center>
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="./js/Space_Game.js"></script>
+    <script type="text/javascript" src="./js/remove.js"></script>
+    <script type="text/javascript" src="./js/connexion.js"></script>
+	<header>
+		<fieldset class="connexion" id="connexion">
+			<legend>Connexion</legend>
+				<div class="formulaire">
+					<center><label for="username">Username</label>
+					<input type="text" name="username" id="username"></center></br>
+					<center><label for="password">Password</label>
+					<input type="password" name="password" id="password"></center></br>
+					<center><button onclick="connexion()">CONNEXION</button></center>
+				</div>
+		</fieldset>
+	</header>
+	<div class='Batiments' style="filter:alpha(opacity=55); opacity:0.5;"> <h2><center> Ressources/Mines </center></h2>
+		<ul id="Navigation">
+    		<li id="m1"><a><b> crystal Mines </b></a>
+    			<p></p>
+    			<p></p>
+    			<p></p>
+    			<button onclick="setInterval(function())">Augmenter le nvM</button>
+    		</li>
+    		<li id="m2"><a><b> metals Mines </b></a>
+				<p></p>
+    			<p></p>
+    			<p></p>
+    			<button onclick="setInterval(function())">Augmenter le nvM</button>
+    		</li>
+  		</ul>
+	</div>
+	<div class='Batiments2' style="filter:alpha(opacity=50); opacity:0.5;"> <h2><center> Usines </center></h2>
+		<ul id="fact">
+    		<li><a><b> Factorys </b></a>
+    			<p></p>
+    			<p></p>
+    			<button onclick="setInterval(function())">Augmenter le nvU</button>
+    		</li>
+  		</ul>
+	</div>
+
+	<div id="sec">
+		<img src="./img/Culture.jpg" width="900px" height="600px">
+	</div>
+	<div id="first">
+		<img src="./img/134124.jpg" width="1920px" height="1080px">
+	</div>
+</body>
+</html>
+
+ 

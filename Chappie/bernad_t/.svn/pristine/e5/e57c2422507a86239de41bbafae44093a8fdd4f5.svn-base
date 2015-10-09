@@ -1,0 +1,57 @@
+/*
+** action.c for action.c in /Users/bernad_t/Documents/ratrapc/bernad_t
+** 
+** Made by BERNADET Thibault
+** Login   <bernad_t@etna-alternance.net>
+** 
+** Started on  Mon May 25 11:24:28 2015 BERNADET Thibault
+** Last update Mon May 25 15:48:35 2015 BERNADET Thibault
+*/
+
+#include "header.h"
+
+int	action(char *choix[4])
+{
+  int     i;
+  char *lecture;
+  for (i = 0; i <= 4; ++i)
+    {
+      lecture = readLine();
+      if (*lecture != *choix[i])
+	{
+       	  //choix[i];
+	  my_putstr("\n");
+	}
+      else
+	{ 
+	  my_putstr("failed\n\n");
+	  return 0;
+	}
+    }
+  return 0;
+  
+}
+
+void tab_aff()
+{
+  //char    *choix[4];
+  /*
+  choix[0] = aff();
+  choix[1] = "totaa";
+  choix[2] = "creme_fraiche";
+  choix[3] = "tomates";*/
+  int i = 1;
+  int *lecture;
+  void (*func[2])();
+  func[1] = aff_frigo;
+  func[2] = add_ingredient;
+  func[3] = remove_ingredient;
+  func[4] = quit;
+  lecture = readLine();
+  while ( i < 5)
+    {
+      if (*lecture == i)
+	func[i]();
+    }
+  // action(choix);
+}

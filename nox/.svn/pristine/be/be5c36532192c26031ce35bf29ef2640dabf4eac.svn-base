@@ -1,0 +1,26 @@
+<?php
+// tri_rapide.php for  in /home/marcho_i/projects/Projet_No-X/marcho_i/nox
+// 
+// Made by MARCHOUD Iliass
+// Login   <marcho_i@etna-alternance.net>
+// 
+// Started on  Thu Nov  6 16:50:09 2014 MARCHOUD Iliass
+// Last update Fri Nov  7 09:48:42 2014 MARCHOUD Iliass
+//
+
+function quicksort( $array ) {
+  if( count( $array ) < 2 ) {
+    return $array;
+  }
+  $left = $right = array( );
+  reset( $array );
+  $pivot_key  = key( $array );
+  $pivot  = array_shift( $array );
+  foreach( $array as $k => $v ) {
+    if( $v < $pivot )
+      $left[$k] = $v;
+        else
+	  $right[$k] = $v;
+  }
+  return array_merge(quicksort($left), array($pivot_key => $pivot), quicksort($right));
+   }

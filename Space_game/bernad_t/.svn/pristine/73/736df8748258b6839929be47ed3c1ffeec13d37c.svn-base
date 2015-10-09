@@ -1,0 +1,77 @@
+body {
+	background-image: url(../img/fond.jpg);
+	background-repeat: no-repeat;
+}
+h1 {
+	color: red;
+}
+header {
+	height: 100px;
+}
+fieldset.connexion {
+    background-color: black;
+    position: absolute; 
+    z-index: 4;
+	color: grey;
+	width: 100px;
+	margin-left: 50%;
+	margin-top: 10%
+}
+div.formulaire {
+	margin-top: 0px; 
+}
+
+.Batiments 
+{
+    top: 260px;
+    left: 0px;
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 600px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 12px;
+    }
+
+.Batiments2 
+{
+    top: 129px;
+    right:  0px;
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 12px;
+    }
+ 
+ ul#Navigation li a {
+    display: block;
+    padding: 30px  10px 1em;
+    color: #000;
+    text-decoration: none;
+    width: 50%;
+}
+
+#sec {
+    padding: 260px;
+    position: relative;
+    width: 500px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    }
+
+    ul#Navigation p {
+    display: block;
+    padding: 0px  1px 1em;
+    color: #000;
+    text-decoration: none;
+}

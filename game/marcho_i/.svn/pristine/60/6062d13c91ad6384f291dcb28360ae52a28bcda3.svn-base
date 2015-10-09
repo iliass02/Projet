@@ -1,0 +1,17 @@
+<?php
+
+function parseur($argv)
+{
+	$map = $argv;
+	if ($file = file_get_contents($map))
+	{
+		$array = explode("\n", $file);
+		var_dump($array);
+		echo $array[1][2]."\n";
+
+	}
+	else
+		echo "ERREUR : Impossible d'ouvrir la map : ".$map."\n";
+}
+
+?>

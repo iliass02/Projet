@@ -1,0 +1,17 @@
+/*
+** my_putchar.c for  in /Users/marcho_i/Desktop/RAT-DEVC/bernad_t
+** 
+** Made by MARCHOUD iliass
+** Login   <marcho_i@etna-alternance.net>
+** 
+** Started on  Mon May 25 09:33:44 2015 MARCHOUD iliass
+** Last update Mon May 25 09:33:46 2015 MARCHOUD iliass
+*/
+
+#include <unistd.h>
+#include <stdlib.h>
+
+void	my_putchar(char c)
+{
+	write(1, &c, 1);
+}

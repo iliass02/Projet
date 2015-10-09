@@ -1,0 +1,17 @@
+<?php
+
+include('./include/parseur.php');
+
+function game ($argc, $argv)
+{
+	if ($argc == 4)
+	{
+		echo "OK\n";
+		parseur($argv[3]);
+	}
+	else
+		echo "USAGE : ./game.php [nombre de vie] [valeur des ressources] [fichier contenant la map]\n";
+
+}
+game($argc, $argv);
+?>

@@ -1,0 +1,13 @@
+int i = 1;
+int *lecture;
+void (*func[2])();
+func[1] = aff_frigo;
+func[2] = add_ingredient;
+func[3] = remove_ingredient;
+func[4] = quit;
+lecture = readLine();
+while ( i < 5)
+  {
+    if (*lecture == i)
+      func[i]();
+  }

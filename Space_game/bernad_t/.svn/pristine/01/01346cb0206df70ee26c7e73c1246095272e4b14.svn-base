@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space Game</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<center><h1>Space Game</h1></center>
+	</header>
+	<div>
+		<fieldset class="connexion">
+			<legend>Connexion</legend>
+				<div class="formulaire">
+					<form method="post" action="Space_Game.js">
+					<center><label for="username">Username</label>
+					<input type="text" name="username" id="username" required></center></br>
+					<center><label for="password">Password</label>
+					<input type="text" name="password" id="password" required></center></br>
+					<center><input type="submit" name="connexion" value="CONNEXION"></center>
+					</form>
+				</div>
+		</fieldset>
+	</div>
+</body>
+</html>

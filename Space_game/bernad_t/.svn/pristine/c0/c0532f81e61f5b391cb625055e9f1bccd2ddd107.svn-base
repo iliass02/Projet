@@ -1,0 +1,14 @@
+function connexion ()
+{
+	var username = $('#username').val();
+	var password = $('#password').val();
+	$.ajax({
+		url: 'http://163.5.245.219/api/1/players/login',
+		type: 'POST',
+		xhrFields: { withCredentials: true },
+		data: {'username' : username, 'password' : password},
+		success : function(){console.log(data)},
+		error : function(){alert("Impossible de ce connecter")}
+	});
+	$('body>header>fieldser').remove();
+}
